@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loding Page</title>
+    <script>
+        function Redirect() {
+       window.location = "house.html";
+        }
+        setTimeout(function() {
+       Redirect();
+        }, 5000);
+       </script>
+</head>
+<style>
+    body{
+        background-image:url("pages/img/loading-page.jpg");
+        background-size: cover;
+    }
+   
+    h1{
+        padding-top:15%;
+        font-size: 50px;
+        text-align: center;
+        animation: opacity 2s infinite;
+    }
+@keyframes opacity{
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+.wrap {
+    position: relative;
+    left:70px;
+    bottom:40rem;    
+  } 
+  .upper,.lower {
+    display:flex;
+    width:350px;
+    justify-content: space-between;
+    margin-left: 450px;
+  }
+  .lower {
+    left:50px;
+    position: relative;
+    top:-10px;
+  }
+  
+  .upper img, .lower img {
+    width: 40px;
+    opacity: 0;
+    animation: fadeIn, fadeOut;
+    animation-duration: 4.5s, 7.5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+  }
+  @keyframes fadeIn {
+    10% {opacity: 1};
+    100% {opacity: 1};
+  }
+  @keyframes fadeOut {
+    25% {opacity: 0};
+    100% {opacity: 0};
+  }
+  
+  .upper img:first-child {
+    animation-delay: 0.5s, 3.5s;
+  }
+  .lower img:first-child {
+    animation-delay: 1s, 4s;  
+  }
+  .upper img:nth-child(2) {
+    animation-delay: 1.5s, 4.5s;
+  }
+  .lower img:nth-child(2) {
+    animation-delay: 2s, 5s;
+  }
+  .upper img:nth-child(3) {
+    animation-delay: 2.5s, 5.5s;
+  }
+  .lower img:nth-child(3) {
+    animation-delay: 3s, 6s;  
+  }
+  .upper img:nth-child(4) {
+    animation-delay: 3.5s, 6.5s;
+  }
+  .lower img:nth-child(4) {
+    animation-delay: 4s, 7s;
+  }  
+</style>
+<body>
+    <main>
+           <div clss="LOADING">
+            <h1>LOADING ...</h1>
+            </div>
+            <div class="warp">
+                <div class="upper">
+                    <img src="pages/img/left-shoe-footprint (1).png" alt="left-shoe-footprint" id="left-shoe-footprint">
+                    <img src="pages/img/left-shoe-footprint (1).png" alt="left-shoe-footprint" id="left-shoe-footprint">
+                    <img src="pages/img/left-shoe-footprint (1).png" alt="left-shoe-footprint" id="left-shoe-footprint">
+                    <img src="pages/img/left-shoe-footprint (1).png" alt="left-shoe-footprint" id="left-shoe-footprint">
+                </div>
+                <div class="lower">
+                    <img src="pages/img/right-shoe-footprint.png" alt="right-shoe-footprint" id="right-shoe-footprint">
+                    <img src="pages/img/right-shoe-footprint.png" alt="right-shoe-footprint" id="right-shoe-footprint">
+                    <img src="pages/img/right-shoe-footprint.png" alt="right-shoe-footprint" id="right-shoe-footprint">
+                    <img src="pages/img/right-shoe-footprint.png" alt="right-shoe-footprint" id="right-shoe-footprint">
+                </div>
+            </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image:url("pages/img/loading-page.jpg");
+        background-size: cover;        
+    }
+    header{
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    padding: 10px;
+    padding: 10px;
+  }
+  header nav img {
+    width: 80px;
+    border-radius: 20px;
+  }
+.navbar-container{
+    margin: 0;    
+  
+  }
+.navbar-container a{  
+    margin: 0px 20px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+.navbar-container a:hover {
+    padding: 5px;
+  } 
+.project-contanier{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    margin-top: 60px;
+  }
+  .main-container .card-container{
+    flex:1;
+    margin: 30px 40px; 
+    padding: 100px;   
+    background-color: rgba(255, 255, 255, 0.521);
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);  
+    border-radius: 20px;
+  } 
+  .main-container .card-container:hover{
+    background-color:white ;
+    text-decoration: none;
+
+  }
+  .main-container .card-container img {
+  width: 200PX;
+  height: 250PX;
+  margin: 10PX;
+  border-radius: 10px;
+  }
+  .main-container .card-container h2{
+    margin: 15px 0px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-align: center;  
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+    .project-contanier .main-container .card-container{
+        background-image: url(pages/img/backgroundraven.jpg)
+
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar-container">
+            <a href="house.html" class="active"> 
+                <img src="pages/img/right-arrow.png" alt="">
+            </a>    
+        </nav>
+    </header>
+    <main>
+        <div class="project-contanier">
+            <div class="main-container">  
+             <!-- --//card 1//-- -->
+             <a href="pages/LunaLovegood.html">
+                <div class="card-container ">
+                    <img src="pages/img/LunaLovegood.jpg" alt="Luna Lovegood" class="card-img">
+                    <h2 class="Luna Lovegood">Harry Potter </h2>
+                </div>
+            </a>
+          </div>
+    </main>
+</body>
+</html>
